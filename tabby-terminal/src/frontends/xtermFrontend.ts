@@ -186,9 +186,6 @@ export class XTermFrontend extends Frontend {
                     return false
                 }
             }
-            if (event.getModifierState('Meta') && event.key.startsWith('Arrow')) {
-                return false
-            }
 
             return keyboardEventHandler('keydown', event)
         })
